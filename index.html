@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/6ebc2d8f5f.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--style -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>SONIX</title>
+</head>
+
+<body>
+    <!-- heading -->
+    <div id="heading">
+        <div class="title">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h1>Know the attendance</h1>
+                        <h5>Its going to be sophisticated and simple, stay tuned. Coming soon...</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./Group 50.svg" alt="title-image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="/wave.svg" class="img-fluid wave" alt="">
+    </div>
+
+    <i class="far fa-moon" onclick="myFunction()">Toggle mode</i>
+
+    <!-- Features -->
+    <section id="feat my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Features</h2>
+            <!-- First section -->
+            <section class="crowd">
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <h3>Number Crowds</h3>
+                        <h4>Confirm the exact figure of People at an event</h4>
+                        <p class="py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor in velit in tempor lorem. In ornare quam a proin mauris quis varius et. A sed pellentesque commodo placerat nibh amet aenean ac tellus. Tincidunt augue quam leo magna
+                            rhoncus eget. Non placerat sit pharetra non sed turpis dolor. Augue magna semper risus habitasse ut. Integer integer pharetra </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="/Onboarding 1.svg" alt="Number crowds image" class="img-fluid">
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- js -->
+    <script>
+        $("#listening").click(function speak() {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = "You have approximately 179 people within your vicinity";
+            window.speechSynthesis.speak(msg);
+        });
+    </script>
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

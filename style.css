@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+:root {
+    --body-font: 'Poppins', sans-serif;
+    --heading-font: 'Montserrat', sans-serif;
+    --wave-color: #090B13;
+    --wave-color2: #05060afd;
+    --black: #000000;
+    --white: #fff;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--wave-color);
+}
+
+h1,
+h5 {
+    font-family: var(--body-font);
+    color: var(--white) !important;
+}
+
+.dark-mode {
+    color: var(--white);
+    background: var(--wave-color2);
+}
+
+p {
+    font-family: var(--body-font);
+}
+
+
+/* heading styles */
+
+#heading {
+    background: transparent;
+}
+
+.title {
+    background: var(--wave-color);
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 65px;
+}
+
+h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+
+/* Features */
+
+h2 {
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+
+/* sect1 */
+
+.crowd {
+    outline: 2px solid black;
+    outline-offset: 2rem;
+}
+
+
+/* Media query */
+
+@media screen and (max-width:600px) {
+    .title {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    h5 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    /* Feautures */
+    /* sect1 */
+    .crowd {
+        outline: none;
+    }
+}
