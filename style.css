@@ -64,12 +64,59 @@ h2 {
     line-height: 49px;
 }
 
+h3 {
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+h4 {
+    font-family: var(--body-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 
 /* sect1 */
 
 .crowd {
     outline: 2px solid black;
-    outline-offset: 2rem;
+    outline-offset: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* sect2 */
+
+.logger {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    outline: 2px solid black;
+    outline-offset: 1rem;
+}
+
+
+/* Footer  */
+
+#footer {
+    background: var(--wave-color);
+    color: var(--white);
+}
+
+#footer p {
+    font-family: var(--body-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footnote {
+    background: var(--wave-color);
 }
 
 
@@ -90,7 +137,23 @@ h2 {
     }
     /* Feautures */
     /* sect1 */
-    .crowd {
+    .crowd,
+    .logger {
         outline: none;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 18px;
+        text-align: center;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+    }
+    /* Footer */
+    #footer p {
+        font-size: 12px;
+        line-height: 16px;
     }
 }
