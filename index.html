@@ -90,7 +90,6 @@
             </section>
             <!-- Third section ends  -->
 
-
             <!-- Forth section  -->
             <section class="logger">
                 <div class="row my-5">
@@ -106,9 +105,52 @@
                 </div>
             </section>
             <!-- Forth section ends  -->
-
         </div>
     </section>
+    <!-- Feautures end -->
+
+    <!-- Carousel -->
+    <section id="gallery" class="mt-4">
+        <div class="container mt-4">
+            <!-- carousel -->
+            <main>
+                <div id="carousel">
+
+                    <div class="hideLeft">
+                        <img src="/signup.svg" class="img-fluid">
+                    </div>
+
+                    <div class="prevLeftSecond">
+                        <img src="/search.svg" class="img-fluid">
+                    </div>
+
+                    <div class="prev">
+                        <img src="/settings.svg" class="img-fluid">
+                    </div>
+
+                    <div class="selected">
+                        <img src="/dashboard.svg" class="img-fluid">
+                    </div>
+
+                    <div class="next">
+                        <img src="/find.svg" class="img-fluid">
+                    </div>
+
+                    <div class="nextRightSecond">
+                        <img src="/Onboarding 1.svg" class="img-fluid">
+                    </div>
+
+                    <div class="hideRight">
+                        <img src="/signup.svg">
+                    </div>
+
+                </div>
+            </main>
+            <!-- carousel -->
+        </div>
+    </section>
+    <!-- Carousel end -->
+
 
     <!-- Footer section -->
     <section id="footer">
@@ -125,8 +167,66 @@
     </section>
 
 
-
     <!-- js -->
+    <!-- test js -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        function moveToSelected(element) {
+            if (element == "next") {
+                var selected = $(".selected").next();
+            } else if (element == "prev") {
+                var selected = $(".selected").prev();
+            } else {
+                var selected = element;
+            }
+
+            var next = $(selected).next();
+            var prev = $(selected).prev();
+            var prevSecond = $(prev).prev();
+            var nextSecond = $(next).next();
+
+            $(selected).removeClass().addClass("selected");
+
+            $(prev).removeClass().addClass("prev");
+            $(next).removeClass().addClass("next");
+
+            $(nextSecond).removeClass().addClass("nextRightSecond");
+            $(prevSecond).removeClass().addClass("prevLeftSecond");
+
+            $(nextSecond).nextAll().removeClass().addClass("hideRight");
+            $(prevSecond).prevAll().removeClass().addClass("hideLeft");
+        }
+
+        // Eventos teclado
+        $(document).keydown(function(e) {
+            switch (e.which) {
+                case 37: // left
+                    moveToSelected("prev");
+                    break;
+
+                case 39: // right
+                    moveToSelected("next");
+                    break;
+
+                default:
+                    return;
+            }
+            e.preventDefault();
+        });
+
+        $("#carousel div").click(function() {
+            moveToSelected($(this));
+        });
+
+        $("#prev").click(function() {
+            moveToSelected("prev");
+        });
+
+        $("#next").click(function() {
+            moveToSelected("next");
+        });
+    </script>
+    <!-- test js end -->
     <script>
         $("#listening").click(function speak() {
             var msg = new SpeechSynthesisUtterance();
