@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--style -->
     <link rel="stylesheet" href="style.css">
+    <!-- Aos stylesheet -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aosffff.css" /> -->
 
+    <!-- Carousel  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.1.2/swiper-bundle.min.css">
     <title>SONIX</title>
 </head>
 
@@ -62,7 +66,7 @@
             <section class="logger">
                 <div class="row my-5">
                     <div class="col-md-3 offset-md-1">
-                        <img src="/search.svg" alt="Attendance logger image" class="img-fluid">
+                        <img src="/search.svg" alt="Attendance logger image" class="img-fluid" data-aos="slide-right">
                     </div>
                     <div class="col-md-5 offset-md-1">
                         <h3 class="pt-5">Attendance logger</h3>
@@ -84,7 +88,7 @@
                             rhoncus eget. Non placerat sit pharetra non sed turpis dolor. Augue magna semper risus habitasse ut. Integer integer pharetra </p>
                     </div>
                     <div class="col-md-3 offset-md-1">
-                        <img src="/signup.svg" alt="Number crowds image" class="img-fluid">
+                        <img src="/signup.svg" data-aos="slide-left" alt="Number crowds image" class="img-fluid">
                     </div>
                 </div>
             </section>
@@ -94,7 +98,7 @@
             <section class="logger">
                 <div class="row my-5">
                     <div class="col-md-3 offset-md-1">
-                        <img src="/settings.svg" alt="Attendance logger image" class="img-fluid">
+                        <img src="/settings.svg" alt="Attendance logger image" class="img-fluid" data-aos="slide-right">
                     </div>
                     <div class="col-md-5 offset-md-1">
                         <h3 class="pt-5">Attendance logger</h3>
@@ -109,43 +113,66 @@
     </section>
     <!-- Feautures end -->
 
+
+    <!-- test  -->
+    <!-- test -->
+
+
     <!-- Carousel -->
     <section id="gallery" class="mt-4">
         <div class="container mt-4">
             <!-- carousel -->
-            <main>
-                <div id="carousel">
 
-                    <div class="hideLeft">
-                        <img src="/signup.svg" class="img-fluid">
+            <div class="swiper-container swiper-container-1 mt-5 swiper-container-initialized swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-active" style="width: 290px; margin-right: 30px;">
+                        <div class="portfolio-card px-3 py-2 mx-3">
+                            <div class="portfolio-card-inner">
+                                <img src="/dashboard.svg" alt="" class="img-fluid w-100">
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="prevLeftSecond">
-                        <img src="/search.svg" class="img-fluid">
+                    <div class="swiper-slide swiper-slide-next" style="width: 290px; margin-right: 30px;">
+                        <div class="portfolio-card px-3 py-2 mx-3">
+                            <div class="portfolio-card-inner">
+                                <img src="/find.svg" alt="" class="img-fluid w-100">
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="prev">
-                        <img src="/settings.svg" class="img-fluid">
+                    <div class="swiper-slide" style="width: 290px; margin-right: 30px;">
+                        <div class="portfolio-card px-3 py-2 mx-3">
+                            <div class="portfolio-card-inner">
+                                <img src="/Onboarding 1.svg" alt="" class="img-fluid w-100">
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="selected">
-                        <img src="/dashboard.svg" class="img-fluid">
+                    <div class="swiper-slide" style="width: 290px; margin-right: 30px;">
+                        <div class="portfolio-card px-3 py-2 mx-3">
+                            <div class="portfolio-card-inner">
+                                <img src="/settings.svg" alt="" class="img-fluid w-100">
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="next">
-                        <img src="/find.svg" class="img-fluid">
+                    <div class="swiper-slide" style="width: 290px; margin-right: 30px;">
+                        <div class="portfolio-card px-3 py-2 mx-3">
+                            <div class="portfolio-card-inner">
+                                <img src="/signup.svg" alt="" class="img-fluid w-100">
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="nextRightSecond">
-                        <img src="/Onboarding 1.svg" class="img-fluid">
+                    <div class="swiper-slide" style="width: 290px; margin-right: 30px;">
+                        <div class="portfolio-card px-3 py-2 mx-3">
+                            <div class="portfolio-card-inner">
+                                <a href="./search.svg" class="img-fluid" data-lightbox="#"></a>
+                                <img src="/search.svg" alt="" class="img-fluid w-100">
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="hideRight">
-                        <img src="/signup.svg">
-                    </div>
-
                 </div>
-            </main>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+                <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
             <!-- carousel -->
         </div>
     </section>
@@ -166,67 +193,17 @@
         </div>
     </section>
 
-
     <!-- js -->
-    <!-- test js -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://unpkg.com/swiper@6.1.2/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        function moveToSelected(element) {
-            if (element == "next") {
-                var selected = $(".selected").next();
-            } else if (element == "prev") {
-                var selected = $(".selected").prev();
-            } else {
-                var selected = element;
-            }
-
-            var next = $(selected).next();
-            var prev = $(selected).prev();
-            var prevSecond = $(prev).prev();
-            var nextSecond = $(next).next();
-
-            $(selected).removeClass().addClass("selected");
-
-            $(prev).removeClass().addClass("prev");
-            $(next).removeClass().addClass("next");
-
-            $(nextSecond).removeClass().addClass("nextRightSecond");
-            $(prevSecond).removeClass().addClass("prevLeftSecond");
-
-            $(nextSecond).nextAll().removeClass().addClass("hideRight");
-            $(prevSecond).prevAll().removeClass().addClass("hideLeft");
-        }
-
-        // Eventos teclado
-        $(document).keydown(function(e) {
-            switch (e.which) {
-                case 37: // left
-                    moveToSelected("prev");
-                    break;
-
-                case 39: // right
-                    moveToSelected("next");
-                    break;
-
-                default:
-                    return;
-            }
-            e.preventDefault();
-        });
-
-        $("#carousel div").click(function() {
-            moveToSelected($(this));
-        });
-
-        $("#prev").click(function() {
-            moveToSelected("prev");
-        });
-
-        $("#next").click(function() {
-            moveToSelected("next");
-        });
+        AOS.init();
     </script>
-    <!-- test js end -->
+    <script src="./animation.js"></script>
+    <!-- test js -->
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script>
         $("#listening").click(function speak() {
             var msg = new SpeechSynthesisUtterance();
