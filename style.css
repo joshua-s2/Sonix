@@ -170,6 +170,13 @@ h4 {
     .logger {
         outline: none;
     }
+    .feat-text-2 {
+        text-align: justify;
+    }
+    /* feat imags */
+    .feat-img {
+        text-align: center;
+    }
     h3 {
         font-size: 20px;
         line-height: 18px;
